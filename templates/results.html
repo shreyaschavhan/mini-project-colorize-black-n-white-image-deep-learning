@@ -1,0 +1,11 @@
+{% extends "index.html" %} {% block content %}
+
+<div class="image">
+  <div class="original">
+    <img src="{{ url_for('static', filename='original.jpg')}}" alt="Original Image">
+  </div>
+  <div class="colorized">
+    <img src="{{ url_for('static', filename='colorized.jpg')}}" alt="Colorized Image">
+  </div>
+</div>
+{% endblock %}
